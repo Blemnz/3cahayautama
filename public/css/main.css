@@ -1,0 +1,352 @@
+:root {
+    --bg:#FCF8FF;
+    --primary:#007663;
+    --nav:#3B3B3B;
+    --font:#1E1926;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg);
+}
+
+.bg{
+    background-color: rgba(252, 248, 255,0.9);
+    color: var(--font);
+    border-bottom: 10px;
+    border-color: black;
+}
+
+.navbar-nav .nav-item a {
+    color: var(--font);
+}
+
+.navbar-nav .nav-item a:hover {
+    color:var(--primary);
+}
+
+.navbar .hide {
+    display:none;
+}
+
+.navbar .wa a {
+    text-decoration: none;
+    color: white;
+    animation: blink-animation 1s step-end infinite;
+}
+
+@keyframes blink-animation {
+    50% {
+        opacity: 0;
+    }    
+}
+
+.navbar .wa a:hover {
+    color:var(--font);
+}
+
+.hero {
+    min-height: 100vh;
+    background-image: url('../img/hero5.jpg');
+    display: flex;
+    background-position: center;
+    align-items: center;
+    background-size: cover;    
+    position: relative;
+    mask: linear-gradient(rgba(0,0,0,1)94%, rgba(0,0,0,0));
+}
+
+/* .hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); Adjust the color and opacity as needed */
+    /* z-index: 1; Ensure the overlay is above the background image */
+/* } */
+
+
+.hero .content {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    padding: 7rem 2rem;
+    display: block;
+}
+.hero .content h2,.hero .content p {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: salmon;
+    text-shadow: 1px 1px 3px black;
+}
+
+.hero .content h2 {
+    font-weight: 700;
+    padding-bottom: 2rem;
+    font-size: 50px;
+}
+
+.hero .content p {
+    font-weight: 600;   
+    font-size: 30px;
+}
+
+.hero .content h3 {
+    font-weight: 700;   
+    font-size: 40px;
+}
+
+.about,
+.products,
+.contacts,
+.testimoni {
+    min-height: 100vh;
+    padding: 5.5rem 7% 2rem;
+    justify-content: center;
+    text-align: center;
+}
+
+.about h2, .contacts h2 {
+ font-weight: 700;
+ font-style: italic;
+ font-size: 2.4rem;
+}
+
+.about span, .contacts span {
+    color: var(--primary);
+}
+
+.about .des p {
+    text-align: justify;
+    align-content: center;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.products h2 {
+    color: var(--primary);
+    font-weight: 700;
+    font-style: italic;
+    font-size: 2.4rem;
+    
+}
+
+.products .bck {
+    align-content: center;
+    max-width: 20rem;
+}
+
+.products img {
+    background-size: cover;
+    background-position: center;
+    max-width: 100%;
+    max-height: 15rem;
+}
+
+.contacts h3 {
+    font-weight: 600;
+}
+
+.contact {
+    text-align: left;
+    padding: 0.5rem 0;
+}
+
+.contact h5 {
+    padding: 0.9rem 0.8rem ;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.contact a {
+    text-decoration: none;
+    color: var(--font);
+}
+
+.contact a:hover {
+    color: var(--primary);
+}
+
+.contacts iframe {
+    width:400px;
+    height:400px;
+}
+
+.contact .btn a {
+    color: white;
+    text-decoration: none ;
+}
+
+.contact .btn a:hover {
+    color: var(--font);
+}
+
+.testimoni h2 {
+    color: var(--primary);
+    font-weight: 700;
+    font-style: italic;
+    font-size: 2.4rem;
+}
+
+.testimoni .img {
+    max-width: 18rem;
+    max-height: 18rem;
+    background-position: center;
+    background-size: cover;
+    border-radius: 5%;
+}
+
+.footer {
+    background-color: var(--primary);
+    color: var(--nav);
+    padding: 1.5rem 0 0;
+}
+
+.footer span {
+    font-size: 0.9rem;
+    color: white;
+    text-shadow: 1px 1px 3px black;
+}
+
+.footer p {
+    font-size: 0.9rem;
+    color: white;
+    text-shadow: 1px 1px 3px black;
+}
+
+.footer .link a {
+    font-size: 1rem;
+    text-decoration: none;
+    text-align: left;
+    padding: 0 0.5rem 0.5rem;
+    color: white;
+    text-shadow: 1px 1px 3px black;
+}
+
+.footer .link {
+    text-align: center;
+    padding: 0 1rem 0;
+}
+
+.footer .credit {
+    text-align: center;
+    display: inline-block;
+}
+
+.footer .sosial {
+    text-align: center;
+}
+
+.footer .sosial a {
+    padding: 0 0.3rem;
+    color: white;
+    text-shadow: 1px 1px 3px black;
+}
+
+.footer div i {
+    font-weight: 0.8rem;
+}
+
+.footer div a:hover {
+    color: var(--nav);
+}
+
+/* media */
+
+@media (max-width:1024px) {
+    .about,
+    .products,
+    .contacts,
+    .testimoni {
+        min-height: 30vh;
+        padding: 3rem 7% 2rem;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+@media (max-width:989px) {
+
+    .navbar .hide {
+        display:contents;
+    }
+
+    .navbar .hide2 {
+        display:none;
+    }
+
+    .navbar .hide a {
+        color: white;
+        text-decoration: none;
+        animation: blink-animation 1s step-end infinite;
+    }
+
+    @keyframes blink-animation {
+        50% {
+            opacity: 0;
+        }    
+    }
+
+    .navbar .hide a:hover {
+        color: var(--font);
+    }
+
+}
+@media (max-width:768px) {
+    .about,
+    .products,
+    .contacts,
+    .testimoni {
+        min-height: 50vh;
+        padding: 3rem 7% 2rem;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+@media (max-width: 450px) {
+    .contacts .map {
+        width:250px; height:250px;
+    }
+    .about,
+    .products,
+    .contacts,
+    .testimoni {
+        min-height: 50vh;
+        padding: 2.5rem 7% 1rem;
+        justify-content: center;
+        text-align: center;
+    }
+    .footer .credit {
+        text-align: center;
+    }
+    
+    .footer .sosial {
+        text-align: center;
+    }
+    .hero .content p {
+        font-weight: 400;   
+        font-size: 15px;
+    }
+    .hero .content h2 {
+        font-weight: 700;
+        padding-bottom: 2rem;
+        font-size: 30px;
+    }
+}
